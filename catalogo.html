@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogos | Green Viagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="topo-marca">
+            <div class="logo">Green<span>Viagens</span></div>
+            <p class="msg">Uma agência feita para você viajar da maneira mais confortável possível</p>
+        </div>
+
+        <nav id="conexao" aria-label="Navegação principal">
+            <a href="index.html">Página Principal</a>
+            <a href="catalogo.html" class="ativo">Catálogos</a>
+            <a href="simulador.html">Área de Simulação</a>
+            <a href="cadastro.html">Cadastrar Usuário</a>
+            <a href="sobre.html">Sobre nós</a>
+        </nav>
+    </header>
+
+    <main class="conteudo-principal">
+        <section class="caixa-leitura">
+            <h1>Catálogo de Destinos</h1>
+
+            <div class="filtros-catalogo">
+                <input type="text" id="busca-destino" aria-label="Buscar destino"
+                    placeholder="Buscar por cidade, país ou região...">
+                <select id="filtro-regiao" aria-label="Filtrar por região">
+                    <option value="todos">Todas as regiões</option>
+                    <option value="Europa">Europa</option>
+                    <option value="América">América</option>
+                    <option value="Ásia">Ásia</option>
+                    <option value="Sul">Sul (Brasil)</option>
+                    <option value="Nordeste">Nordeste (Brasil)</option>
+                    <option value="Sudeste">Sudeste (Brasil)</option>
+                </select>
+                <button type="button" id="btn-limpar" class="btn-acao">Limpar</button>
+            </div>
+
+            <div class="barra-contador">
+                <span id="contador-itens">Exibindo 0 destinos</span>
+                <span id="soma-catalogo">Soma dos pacotes exibidos: R$ 0,00</span>
+            </div>
+
+            <div id="lista-destinos" class="grid-destinos"></div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Pedro Henrique da Silva</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+<script src="script.js"></script>
+
+</html>

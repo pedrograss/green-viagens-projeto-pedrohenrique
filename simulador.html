@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de Simulação | Green Viagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="topo-marca">
+            <div class="logo">Green<span>Viagens</span></div>
+            <p class="msg">Uma agência feita para você viajar da maneira mais confortável possível</p>
+        </div>
+
+        <nav id="conexao" aria-label="Navegação principal">
+            <a href="index.html">Página Principal</a>
+            <a href="catalogo.html">Catálogos</a>
+            <a href="simulador.html" class="ativo">Área de Simulação</a>
+            <a href="cadastro.html">Cadastrar Usuário</a>
+            <a href="sobre.html">Sobre nós</a>
+        </nav>
+    </header>
+
+    <main class="conteudo-principal">
+        <section class="caixa-leitura">
+            <h1>Área de Simulação</h1>
+            <p style="color: #cbd5e1; margin-bottom: 12px;">
+                Clique em um dos destinos abaixo para escolher a viagem:
+            </p>
+
+            <div id="opcoes-destinos-visuais" class="grid-opcoes-simulador"></div>
+
+            <div class="form-padrao">
+                <div class="campo-grupo">
+                    <label for="sim-adultos">Quantidade de Adultos</label>
+                    <input type="number" id="sim-adultos" min="1" max="10" value="1">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="sim-criancas">Quantidade de Crianças (metade do valor / 50%)</label>
+                    <input type="number" id="sim-criancas" min="0" max="10" value="0">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="sim-classe">Classe do Voo</label>
+                    <select id="sim-classe">
+                        <option value="1">Econômica</option>
+                        <option value="1.5">Executiva (+50%)</option>
+                    </select>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="sim-pagamento">Forma de Pagamento</label>
+                    <select id="sim-pagamento">
+                        <option value="vista">À vista (5% de desconto)</option>
+                        <option value="parcelado">Parcelado (sem desconto)</option>
+                    </select>
+                </div>
+
+                <div class="caixa-resultado">
+                    Destino escolhido: <strong id="sim-nome-escolhido">Alicante</strong><br>
+                    Condição: <span id="sim-condicao-texto">À vista (5% de desconto)</span><br>
+                    Valor total estimado: <strong id="sim-total">R$ 0,00</strong>
+                </div>
+
+                <button type="button" id="btn-seguir-cadastro" class="btn-acao">
+                    Ir para Cadastro de Usuário
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Pedro Henrique da Silva</p>
+    </footer>
+
+
+</body>
+<script src="script.js"></script>
+</html>

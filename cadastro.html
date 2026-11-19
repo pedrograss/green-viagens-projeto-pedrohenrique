@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Usuário | Green Viagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="topo-marca">
+            <div class="logo">Green<span>Viagens</span></div>
+            <p class="msg">Uma agência feita para você viajar da maneira mais confortável possível</p>
+        </div>
+
+        <nav id="conexao" aria-label="Navegação principal">
+            <a href="index.html">Página Principal</a>
+            <a href="catalogo.html">Catálogos</a>
+            <a href="simulador.html">Área de Simulação</a>
+            <a href="cadastro.html" class="ativo">Cadastrar Usuário</a>
+            <a href="sobre.html">Sobre nós</a>
+        </nav>
+    </header>
+
+    <main class="conteudo-principal">
+        <section class="caixa-leitura">
+            <h1>Cadastrar Usuário</h1>
+
+            <div id="resumo-simulacao" class="resumo-box" style="margin-bottom: 18px;"></div>
+
+            <form id="form-cadastro" class="form-padrao" novalidate>
+                <div class="campo-grupo">
+                    <label for="cad-nome">1. Nome completo</label>
+                    <input type="text" id="cad-nome" placeholder="Digite seu nome e sobrenome">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="cad-email">2. E-mail</label>
+                    <input type="email" id="cad-email" placeholder="voce@exemplo.com">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="cad-cpf">3. CPF (11 números)</label>
+                    <input type="text" id="cad-cpf" placeholder="000.000.000-00" maxlength="14">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="cad-telefone">4. Telefone com DDD</label>
+                    <input type="tel" id="cad-telefone" placeholder="(81) 99999-9999" maxlength="15">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="cad-data">5. Data prevista de embarque</label>
+                    <input type="date" id="cad-data">
+                </div>
+
+                <button type="submit" class="btn-acao">Finalizar Cadastro</button>
+            </form>
+
+            <div id="msg-cadastro" style="display: none; margin-top: 18px;"></div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Pedro Henrique da Silva</p>
+    </footer>
+
+
+</body>
+<script src="script.js"></script>
+</html>
