@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Viagens | Início</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">Green<span>Viagens</span></div>
+        <nav>
+            <a href="index.html" class="ativo">Início</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="simulador.html">Simulador</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="sobre.html">Sobre</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>Para onde você quer voar?</h1>
+            <p>Pacotes completos para Europa, Américas e Ásia com planejamento prático.</p>
+
+            <div class="search-box">
+                <input type="text" id="busca-home" placeholder="Digite um destino (ex: Alicante, Porto, Bangkok...)">
+                <button type="button" id="btn-busca-home">Buscar Pacotes</button>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="topo-secao">
+            <h2>Destaques da Semana</h2>
+            <a href="simulador.html" class="link-acao">Ir direto ao Simulador &rarr;</a>
+        </div>
+
+        <div id="destaques-home" class="grid-destinos"></div>
+
+        <div class="acao-central">
+            <a href="catalogo.html" class="btn-secundario">Ver Catálogo Completo</a>
+            <a href="sobre.html" class="btn-outline">Conheça a Agência</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Green Viagens &bull; Projeto Acadêmico SENAI</p>
+        <p>Pedro Henrique da Silva</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
